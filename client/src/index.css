@@ -3,7 +3,11 @@
   --black:#09090c;
   --grey:#a4b2bc;
   --white:#fff;
-  --background:rgba(137,171,245,0.37);
+  --green:#1DF019;
+  --pink:#EC25F0;
+  --blue:#2E9CCA;
+  --orange:#FBC60B;
+  --background: var(--black)
 }
 *,*::before,*::after{
   margin:0;
