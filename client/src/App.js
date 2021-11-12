@@ -1,13 +1,23 @@
 
-import './App.css';
+
 import Sidebar from './components/Sidebar';
-
-
+import Home from './screens/Home'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 function App() {
   return (
-    <div className="App">
+    <div>
       <Sidebar />
-    </div>
+    <Routes>
+    <Route>
+      <Route path='/Home' element={<Home />} />
+    </Route>
+      </Routes>
+      </div>
   );
 }
 
