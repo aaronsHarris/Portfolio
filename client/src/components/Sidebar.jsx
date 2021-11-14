@@ -52,7 +52,7 @@ const Button = styled.button`
 const SidebarContainer = styled.div`
   background-color: var(--blue);
   width: 3.5rem;
-  height: 80vh;
+  height: 60vh;
   margin-top: 1rem;
   border-radius: 0 30px 30px 0;
   padding: 1rem 0;
