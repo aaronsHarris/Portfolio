@@ -1,21 +1,21 @@
-import logo from "../assets/logo.svg";
+// import logo from "../assets/logo.svg";
 import Home from "../assets/Home.svg";
 import star from "../assets/star.svg";
 import contact from "../assets/contact.svg";
 import folder from "../assets/folder.svg";
-import styled from "styled-components";
+// import styled from "styled-components";
 import { useState } from "react";
 import {BurgerButton} from './styles/BurgerButton.styled'
 import { NavContainer } from "./styles/NavContainer.styles";
 import { SidebarContainer } from "./styles/SidebarContainer.styles";
-import { Logo } from "./styles/Logo.styled";
+// import { Logo } from "./styles/Logo.styled";
 import { SlickBar } from "./styles/SlickBar.styled";
 import { NavItem } from "./styles/NavItem.styles";
 import { Text } from "./styles/Text.styles";
 import { Profile } from "./styles/Profile.styled";
 import { Details } from "./styles/Details.styles";
 import { Name } from "./styles/Name.styles";
-import { Logout } from "./styles/Logout.styles";
+// import { Logout } from "./styles/Logout.styles";
 
 
 const Sidebar = () => {
@@ -34,8 +34,6 @@ const Sidebar = () => {
       <SlickBar clicked={click}>
         <NavItem
           onClick={() => setClick(false)}
-          exact
-          activeClassName="active"
           to="/"
         >
           <img src={Home} alt="Home" />
@@ -43,7 +41,6 @@ const Sidebar = () => {
         </NavItem>
         <NavItem
           onClick={() => setClick(false)}
-          activeClassName="active"
           to="/about"
         >
           <img src={star} alt="about" />
@@ -51,7 +48,7 @@ const Sidebar = () => {
         </NavItem>
         <NavItem
           onClick={() => setClick(false)}
-          activeClassName="active"
+          
           to="/projects"
         >
           <img src={folder} alt="projects" />
@@ -59,7 +56,7 @@ const Sidebar = () => {
         </NavItem>
         <NavItem
           onClick={() => setClick(false)}
-          activeClassName="active"
+          
           to="/contact"
         >
           <img src={contact} alt="Contact" />
@@ -67,7 +64,7 @@ const Sidebar = () => {
         </NavItem>
         {/* <NavItem
           onClick={() => setClick(false)}
-          activeClassName="active"
+          
           to="/projects"
         >
           <img src={folder} alt="Projects" />
@@ -84,7 +81,7 @@ const Sidebar = () => {
         <Details clicked={profileClick}>
           <Name>
             <h4>Aaron&nbsp;Harris</h4>
-            <a href="#">view&nbsp;GitHub</a>
+            <a href="https://github.com/aaronsHarris/portfolio">view&nbsp;GitHub</a>
           </Name>
 
           {/* <Logout>

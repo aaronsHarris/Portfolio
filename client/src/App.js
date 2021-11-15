@@ -3,7 +3,7 @@ import Home from "./screens/Home";
 import About from "./screens/About.jsx";
 import Projects from "./screens/Projects";
 import Contact from "./screens/Contact";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Screens } from "./components/styles/Screens.styled";
 import { AnimatePresence } from "framer-motion";
 
