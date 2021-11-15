@@ -13,7 +13,7 @@ function App() {
     <>
       <Sidebar />
       <Screens>
-        <AnimatePresence></AnimatePresence>
+        <AnimatePresence>
       <Routes>
         <Route>
             <Route path="/" element={<Home />} />
@@ -22,6 +22,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
+      </AnimatePresence>
           </Screens>
     </>
   );

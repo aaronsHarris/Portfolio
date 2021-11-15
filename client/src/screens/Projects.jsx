@@ -1,11 +1,11 @@
-import React from 'react'
+import MotionHoc from "../components/animations/MotionHoc";
 
-const Projects = () => {
-    return (
-        <div>
-           Projects 
-        </div>
-    )
-}
+const ProjectsComponent = () => {
+  return <h1>Projects</h1>;
+};
+
+const Projects = MotionHoc(ProjectsComponent);
+
+
 
 export default Projects

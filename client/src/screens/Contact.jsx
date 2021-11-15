@@ -1,11 +1,9 @@
-import React from 'react'
+import MotionHoc from "../components/animations/MotionHoc";
 
-const Contact = () => {
-    return (
-        <div>
-            contact
-        </div>
-    )
-}
+const ContactComponent = () => {
+  return <h1>Contact</h1>;
+};
+
+const Contact = MotionHoc(ContactComponent);
 
 export default Contact
