@@ -4,6 +4,7 @@ const HomeComponent = () => {
   return (
     <>
       <h1>Aaron Harris</h1>
+      <p>Full Stack Developer</p>
     </>
   );
 };
