@@ -7,6 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import { Screens } from "./components/styles/Screens.styled";
 import { AnimatePresence } from "framer-motion";
 import NavBar from "./components/NavBar";
+import MobileMenu from "./components/MobileMenu";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <>
       {/* <Sidebar /> */}
       <NavBar />
+      <MobileMenu />
       <Screens>
         <AnimatePresence>
           <Routes>
