@@ -1,4 +1,4 @@
-import {FaBars} from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import {
   NavContainer,
   Nav,
@@ -7,6 +7,8 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavBtnLink,
+  NavBtn,
 } from "./styles/Nav.styled";
 import { Link } from "react-router-dom";
 
@@ -33,7 +35,9 @@ const NavBar = () => {
               <NavLinks to="contact">Contact</NavLinks>
             </NavItem>
                   </NavMenu>
-                  
+                  <NavBtn>
+                      <NavBtnLink to='/contact'>Contact</NavBtnLink>
+                  </NavBtn>
         </NavContainer>
       </Nav>
     </>
