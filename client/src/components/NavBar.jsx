@@ -1,5 +1,13 @@
-import React from "react";
-import { NavContainer, Nav, NavLogo } from "./styles/Nav.styled";
+import {FaBars} from "react-icons/fa";
+import {
+  NavContainer,
+  Nav,
+  NavLogo,
+  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks,
+} from "./styles/Nav.styled";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -7,7 +15,25 @@ const NavBar = () => {
     <>
       <Nav>
         <NavContainer>
-          <NavLogo to='Home'>Aaron</NavLogo>
+          <NavLogo to="/">Aaron</NavLogo>
+          <MobileIcon>
+            <FaBars />
+          </MobileIcon>
+          <NavMenu>
+            <NavItem>
+              <NavLinks to="Home">Home</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="about">About</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="projects">Projects</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="contact">Contact</NavLinks>
+            </NavItem>
+                  </NavMenu>
+                  
         </NavContainer>
       </Nav>
     </>
