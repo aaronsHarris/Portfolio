@@ -7,23 +7,22 @@ import { Routes, Route } from "react-router-dom";
 import { Screens } from "./components/styles/Screens.styled";
 import { AnimatePresence } from "framer-motion";
 
-
 function App() {
   return (
     <>
       <Sidebar />
       <Screens>
         <AnimatePresence>
-      <Routes>
-        <Route>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-      </AnimatePresence>
-          </Screens>
+          <Routes>
+            <Route>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+            </Route>
+          </Routes>
+        </AnimatePresence>
+      </Screens>
     </>
   );
 }
