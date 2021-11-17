@@ -1,4 +1,4 @@
-import Sidebar from "./components/Sidebar";
+// import Sidebar from "./components/Sidebar";
 import Home from "./screens/Home";
 import About from "./screens/About.jsx";
 import Projects from "./screens/Projects";
@@ -6,11 +6,14 @@ import Contact from "./screens/Contact";
 import { Routes, Route } from "react-router-dom";
 import { Screens } from "./components/styles/Screens.styled";
 import { AnimatePresence } from "framer-motion";
+import NavBar from "./components/NavBar";
+
 
 function App() {
   return (
     <>
-      <Sidebar />
+      {/* <Sidebar /> */}
+      <NavBar />
       <Screens>
         <AnimatePresence>
           <Routes>
