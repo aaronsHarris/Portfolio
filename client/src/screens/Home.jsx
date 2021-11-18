@@ -1,15 +1,23 @@
 import MotionHoc from "../components/animations/MotionHoc";
-import styled from "styled-components";
 import { useState } from "react";
+import NavBar from "../components/NavBar";
+import MobileMenu from "../components/MobileMenu";
 
 
 
 
 const HomeComponent = () => {
-  const [click, setClick] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
+
+
   return (
     <>
-    
+      <MobileMenu isOpen={isOpen} toggle={toggle}/>
+      <NavBar toggle={toggle}/>
       <h1>Aaron Harris</h1>
       <p>Full Stack Developer</p>
     </>

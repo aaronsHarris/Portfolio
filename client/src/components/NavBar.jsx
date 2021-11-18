@@ -12,13 +12,13 @@ import {
 } from "./styles/Nav.styled";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({toggle}) => {
   return (
     <>
       <Nav>
         <NavContainer>
           <NavLogo to="/">Aaron</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
