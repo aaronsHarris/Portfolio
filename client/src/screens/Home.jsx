@@ -2,7 +2,7 @@ import MotionHoc from "../components/animations/MotionHoc";
 import { useState } from "react";
 import NavBar from "../components/NavBar";
 import MobileMenu from "../components/MobileMenu";
-
+import Hero from "../components/Hero";
 
 
 
@@ -18,8 +18,7 @@ const HomeComponent = () => {
     <>
       <MobileMenu isOpen={isOpen} toggle={toggle}/>
       <NavBar toggle={toggle}/>
-      <h1>Aaron Harris</h1>
-      <p>Full Stack Developer</p>
+      <Hero />
     </>
   );
 };
