@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import MobileMenu from "../components/MobileMenu";
 import Hero from "../components/Hero";
 import Sections from "../components/Sections";
+import { homeObjOne } from "../components/SectionData";
 
 
 
@@ -20,7 +21,7 @@ const HomeComponent = () => {
       <MobileMenu isOpen={isOpen} toggle={toggle}/>
       <NavBar toggle={toggle}/>
       <Hero />
-      <Sections />
+      <Sections {...homeObjOne}/>
     </>
   );
 };

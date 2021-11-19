@@ -11,29 +11,45 @@ import {
   Subtitle,
   BtnWrap,
   Column2,
-  imgWrap,
+  ImgWrap,
   Img,
 } from "./styles/Sections.styles";
 
-const Sections = () => {
+const Sections = ({
+  alt,
+  buttonLabel,
+  darkText,
+  description,
+  headline,
+  id,
+  img,
+  imgStart,
+  lightBg,
+  lightText,
+    topLine,
+    primary,
+    dark,
+    dark2,
+}) => {
   return (
-    <SectionContainer>
+    <SectionContainer lightBg={lightBg} id={id}>
       <SectionWrapper>
-        <SectionRow>
+        <SectionRow imgStart={imgStart}>
           <Column1>
             <TextWrapper>
-              <TopLine>TopLine</TopLine>
-              <Header>Header</Header>
-              <Subtitle>Subtitle</Subtitle>
+              <TopLine>{topLine}</TopLine>
+              <Header lightText={lightText}>{headline}</Header>
+              <Subtitle darkText={darkText}>{description}</Subtitle>
               <BtnWrap>
-                <Button to="home">Button</Button>
+                <Button to="home" smooth={true} duration={500} spy={true} exact='true' offset={-80} primary={primary ? 1 : 0} dark={dark ? 1 : 0} dark2={dark2 ? 1 : 0}>{buttonLabel}</Button>
               </BtnWrap>
             </TextWrapper>
           </Column1>
-          <Column2></Column2>
-          <imgWrap>
-            <Img />
-          </imgWrap>
+          <Column2>
+          <ImgWrap>
+            <Img src={img} alt={alt} />
+          </ImgWrap>
+          </Column2>
         </SectionRow>
       </SectionWrapper>
     </SectionContainer>
