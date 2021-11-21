@@ -10,7 +10,7 @@ import {
   NavBtnLink,
   NavBtn,
 } from "./styles/Nav.styled";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const NavBar = ({toggle}) => {
   return (
