@@ -7,7 +7,7 @@
   --pink:#EC25F0;
   --blue:#2E9CCA;
   --orange:#FBC60B;
-  --background: var(--white)
+  --background: var(--black)
 }
 *,*::before,*::after{
   margin:0;

@@ -13,7 +13,7 @@ import {
   ArrowRight,
 } from "./styles/Hero.styles";
 
-const Hero = () => {
+const Hero = ({id}) => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
   };
 
   return (
-    <HeroContainer>
+    <HeroContainer id={id}>
       <HeroBG>
         <VideoBG autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBG>
