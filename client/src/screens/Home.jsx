@@ -14,7 +14,8 @@ const HomeComponent = () => {
   const toggle = () => {
     setIsOpen(!isOpen)
   }
-
+  console.log('Thanks for visiting my portfolio site, check out the responsive design!')
+  console.log('also if you have any suggestions about this warning let me know on github. click the link above.')
 
   return (
     <>

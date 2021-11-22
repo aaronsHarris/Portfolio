@@ -4,7 +4,7 @@ export const heroObj = {
 
 
 export const homeObjOne = {
-    id: 'project',
+    id: 'project1',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -20,7 +20,7 @@ export const homeObjOne = {
     darkText: false,
 }
 export const homeObjTwo = {
-    id: 'project',
+    id: 'project2',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -36,7 +36,7 @@ export const homeObjTwo = {
     darkText: true,
 }
 export const homeObjThree = {
-    id: 'projects',
+    id: 'project3',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
